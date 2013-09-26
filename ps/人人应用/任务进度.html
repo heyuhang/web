@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>任务进度</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+	font-family:微软雅黑;
+}
+#wrap{
+	width:750px;
+	height:800px;
+	background:url(./images/rbg.gif) no-repeat;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+#top{
+	height:100px;
+	width:100px;
+	position:absolute;
+	top:30px;
+	left:650px;
+	font-size:36px;
+	color:#000;
+}
+.box{
+	width:50px;
+	height:50px;
+}
+.z{
+	position:absolute;
+	background:url(./images/z1.png) no-repeat;
+	width:245px;
+	height:442px;
+	top:120px;
+	left:65px;
+}
+.f{
+	position:absolute;
+	background:url(./images/f3.png) no-repeat;
+	width:245px;
+	height:442px;
+	top:120px;
+	left:480px;
+}
+.obj{
+	position:absolute;
+	top:216px;
+	left:340px;
+	font-size:21px;
+	font-weight:bold;
+	color:#3581bd;
+}
+.time{
+	position:absolute;
+	top:250px;
+	left:370px;
+	font-size:21px;
+	font-weight:bold;
+	color:#3581bd;
+}
+.jd{
+	position:absolute;
+	top:365px;
+	left:310px;
+	font-size:71px;
+	font-weight:bold;
+	color:#03981c;
+	text-shadow:3px 2px  1px #FFF;
+}
+.no{
+	position:absolute;
+	top:460px;
+	left:405px;
+	font-size:41px;
+	font-weight:bold;
+	color:#3581bd;
+	text-shadow:3px 2px  1px #FFF;
+}
+.head{
+	position:absolute;
+	top:570px;
+	left:160px;
+	width:500px;
+	height:200px;
+	margin:0;
+	padding:0;	
+}
+.head ul li{
+	float:left;
+	list-style:none;
+	width:65px;
+	height:80px;
+	margin:10px;
+	position:relative;
+	top:-12px;
+}
+.head ul li img{
+	width:65px;
+	height:65px;
+	top:0px;	
+	background-color:#fff;
+	position:relative;
+
+}
+.head ul li .name{
+	position:relative;
+	font-size:16px;
+	color:#3581bd;
+	line-height:10px;
+	width:65px;
+	text-align:center;
+	
+}
+#bdshare{
+	position:relative;
+	right:50px;
+}
+</style>
+<script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function(){		
+	$("#wrap .z,#wrap .f").click(function(){
+		var num=$(this).attr("value");
+		var name=$(this).attr("name");
+		var per=num+"%";
+		var num2=0;
+		if(num<=25){
+			num2=1;
+		}else if(num<=50){
+			num2=2;
+		}else if(num<=75){
+			num2=3;
+		}else num2=4;
+		$(this).css('background','url(./images/'+name+num2+'.png)' ) ;
+		$("#wrap .jd").text(per);
+
+	});
+});
+</script>
+<body>
+<div id="wrap"> 
+  <div id="top"> <a href="#"> 
+    <div class="box"></div>
+    </a> </div>
+  <div class="z" value="80" name="z"></div>
+  <!--根据传入value改变小人大小-->
+  <div class="f" value="90" name="f"></div>
+  <div class="obj">打乒乓球</div>
+  <div class="time">至5月1日</div>
+  <div class="jd">40%</div>
+  <div class="no">28</div>
+  <div class="head"> 
+    <ul>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+      <li><img src="images/z2.png"/> 
+        <div class="name">name</div>
+      </li>
+    </ul>
+  </div>
+  <div id="share"> 
+    <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=6&amp;pos=right&amp;uid=6718867" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+    <!-- Baidu Button END -->
+  </div>
+</div>
+</body>
+</html>

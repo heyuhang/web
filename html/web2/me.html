@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>我的圈子 | hookup</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/editor_config.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/editor_all.js"></script>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	width:1366px;
+	font: 13px/1.5 'ProvaRegular','Liberation Sans',sans-serif;
+	background-color:#e3e5d4;
+}
+*{
+    border: 0;
+    outline: 0;
+    padding:0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+	font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
+	vertical-align: baseline;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#nav{
+	height:105px;
+	background:url(./images/mbg.gif) bottom repeat-x;
+	position:relative;
+}
+#logo{
+	left:170px;
+	position:absolute;
+	width:375px;
+	height:106px;
+	background:url(./images/logo-m.gif) bottom repeat-x;	
+}
+#nav_menu{
+	height:47px;
+	position:relative;
+	right:200px;
+	color:#BBB;		
+}
+ul li{
+	list-style:none;
+	float:left;
+}
+a{
+	text-decoration: none;
+}
+#nav_menu ul{
+	height:38px;
+	position:absolute;
+	right:100px;
+}
+#nav_menu ul li{
+	padding:10px 18px 10px 20px;
+	font-size:17px;
+}
+
+#content{
+	margin:0 auto;
+	width:890px;
+}
+.bb{
+	height:20px;
+}
+#box-l{
+	border:1px solid #fff;
+	margin-bottom:25px;
+	color: rgb(57, 62, 66);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	background-color: rgb(246, 248, 248);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#box-l:hover{
+	background-color: rgb(246, 248, 248);
+	
+	z-index: 10 !important;
+	transform: translate3d(0px, 0px, 0px) rotate(0deg) !important;
+	-webkit-transform:translate3d(0px, 0px, 0px) rotate(0deg) !important; 
+}
+.left{
+	width:600px;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+.right{
+	width:270px;
+	float:right;
+}
+#box-r-t{
+	height:272px;
+	width:243px;
+	background-color:#fff;	
+}
+#box-r{
+	height:270px;
+	width:238px;
+	background-color:#F6F8F8;
+	margin-left:0px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	border-bottom:none;	
+}
+.bc{
+	position:relative;
+	height:40px;
+	top:0px;
+	background:#424242;
+	margin:10px 0px 20px 10px;
+}
+#box-top{
+	height:100px;
+	width:600px;
+	background-color:#F6F8F8;
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom:20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#box-top .bt-left{
+	height:100px;
+	width:100px;
+	background-color:#9dc2c2;
+	box-shadow: 0px 2px -10px rgba(0, 0, 0, 0.3);
+}
+#box-top .bt-left img{
+	width:80px;
+	height:auto;
+	margin:5px 10px;
+}
+.button{
+	height:70px;
+}
+.button input{
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+	padding-right: 15px;
+	padding-left: 15px;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px 4px 4px 4px;
+	padding:6px;
+	border: 1px solid rgb(190, 204, 204);
+	background: none repeat scroll 0% 0% rgb(238, 238, 238);
+	min-width: 0.7em;
+	margin: 0px 0px 0px -1px;
+	width:250px;
+}
+#box-r .box-label{
+	top:30px;
+	left:18px;
+	position:relative;
+	border-radius: 4px 4px 4px 4px;
+	border:1px solid #8fa28f;
+	height:150px;
+	width:200px;
+}
+.button .input-label-submit .inputs{
+	top:10px;
+	left:420px;
+	position:relative;
+	padding:6px;
+	width:100px;
+}
+.button .input-label-submit .inputy{
+	top:10px;
+	left:400px;
+	position:relative;
+	padding:6px;
+	width:70px;
+}
+.button .input-label-submit input:hover{
+	background-color:#1f211f;
+	color:#fff;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="nav"> 
+    <div id="logo"> </div>
+    <div id="nav_menu"> 
+      <ul>
+        <li>首页</li>
+        <li>设置</li>
+      </ul>
+    </div>
+  </div>
+<div id="content">
+<div class="bb">
+</div>
+<div class="left">
+	<div id="box-top">
+		<div class="bt-left"><img src="images/logo.png"></img></div>
+	</div>
+	<div id="box-l">
+<textarea name="后台取值的key" id="myEditor">这里写你的初始化内容</textarea>
+<div class="button">
+           <div class="input-label-submit"> 
+		      <input type="button" value="预览" class="inputy">
+              </input>
+              <input type="button" value="发表" class="inputs">
+              </input>
+           </div>
+</div>
+<script type="text/javascript">
+    var editor = new UE.ui.Editor();
+    editor.render("myEditor");
+    //1.2.4以后可以使用一下代码实例化编辑器
+    //UE.getEditor('myEditor')
+</script> 
+	</div>
+</div>
+<div class="right">
+	<div id="box-r">
+		<div class="box-label">
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="bottom">
+
+</div>
+</div>
+</body>
+</html>

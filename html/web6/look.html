@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>header</title>
+<script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	font: 13px/1.5 'ProvaRegular','Liberation Sans',sans-serif;
+}
+*{
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+	font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
+	vertical-align: baseline;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#wrap{
+	border-top:1px solid #000;
+	background:url(./images/bg.png);
+	min-height:300px;
+	width:100%;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	transition-property: background-color, color, border, border-color;
+	-webkit-transition-property: background-color, color, border, border-color;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	-webkit-transition-timing-function: ease-in;
+	text-transform: uppercase;
+	-webkit-text-transform: uppercase;
+	color:#1f211f;
+	font-size:17px;
+	outline: 0px none !important;
+	font-weight: bold;	
+}
+#top .sub{
+	position:absolute;
+	top:-10px;
+	right:20%;
+}
+#top .sub li{
+	padding:5px 10px;
+	list-style:none;
+	float:left;
+}
+a:hover{
+	font-weight: bold;
+	color:#fff;
+}
+#left{
+	margin: 0px;
+	width: 250px;
+	float: left;
+	margin-top:10px;
+	margin-left:40px;
+}
+#box-l{
+	width:250px;
+}
+#right{
+	margin: 0px;
+	width: 610px;
+	float: left;
+	margin-top:10px;
+}
+#content{
+    line-height: 18px;
+	width: 940px;
+	margin: 0px auto;
+}
+#box{
+	width: 610px;
+	border-bottom:1px solid #111;
+}
+#box-l{
+	z-index: 0;
+	min-height:250px;
+	background-color:rgb(200, 200, 200);
+	margin: 0px 0px 10px 0px;
+	background: none repeat scroll 0% 0% rgb(237, 241, 242);
+	padding: 10px;
+	float: left;
+	margin: 0px 0px 0px -15px;	
+	color: rgb(57, 62, 66);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom:20px;
+	background-color: rgb(236, 242, 242);
+	border-radius: 7px 7px 7px 7px;
+}
+#box img:hover,#box-l:hover{
+	background-color: rgb(246, 248, 248);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+	z-index: 10 !important;
+}
+#right .mar{
+	margin-bottom:60px;
+}
+.clear{
+	clear:both;
+}
+#box img{
+	width: 610px;
+	height:auto;
+	margin-left: -2px;
+	margin-bottom: 1em;
+	border: 2px solid rgb(237, 241, 242);
+	background: none repeat scroll 0% 0% rgb(245, 249, 250);
+}
+#comment-box .head{
+	width: 150px;
+	height:50px;
+}
+#comment-box .head img{
+	width:50px;
+	height:50px;
+	float:left;
+	background:#8fa28f;
+	border-radius: 7px 7px 7px 7px;
+	background-color:rgb(200, 200, 200);
+}
+#comment-box .head .name{
+	float:left;
+	position: relative;
+	margin:3px 0px 0px 10px;  
+	font-size:18px;
+	color:#8fa28f;
+	font-weight:bold;
+}
+#comment-box .head .replay{
+	top:10px;
+	position: relative;
+	margin:0px 0px 0px 15px;  
+	font-size:15px;
+	left:8px;
+}
+#comment-box .head .replay a{
+	font-size:15px;
+}
+#comment-box .comment{
+	width:450px;
+	left:160px;
+	position: relative;
+	top:-44px;
+	margin:0px 0px 0px 10px;  
+	font-size:15px;
+	color:rgb(200, 200, 200);
+}
+#box .content{
+	margin-top:5px;
+	font-size:15px;
+	line-height: 25px;	
+}
+#content{
+    line-height: 18px;
+	width: 910px;
+	margin: 0px auto;
+	min-height:600px;
+}
+#daoh{
+	width:880px;
+	height:300px;
+	color:rgb(187, 187, 187);
+	font-size:20px;
+	padding:10px;
+	border:2px solid #000;
+	background-color:#990000;
+	box-shadow: 0px 2px 10px rgb(255,255,255);	
+}
+.clear{
+	clear:both;
+}
+#bottom{
+	height:70px;
+	border-top:1px solid #000;
+	background:url(./images/header_bg.jpg);	
+}
+#box-b{
+	width:100%;
+	height:40px;
+	text-align:center;
+}
+#box-b address{
+	padding:20px 0px;
+	font-size:18px;
+}
+#page{
+	height:50px;
+	font-size:18px;	
+}
+#page .s a{
+	margin-right: 10px;
+	font-weight: bold;
+	padding-right: 15px;
+	padding-left: 15px;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px 4px 4px 4px;
+	padding:6px;
+	border: 1px solid rgb(190, 204, 204);
+	background: none repeat scroll 0% 0% rgb(238, 238, 238);
+	text-align: center;
+	min-width: 0.7em;
+	margin: 0px 0px 0px -1px;	
+}
+#page .s a:hover{
+	background-color:#1f211f;;
+}
+
+#top{
+    width: 100%;
+	height:30px;
+    opacity: 0.9;
+	top:0px;
+    background-color: rgb(50, 40, 31);
+	background:url(./images/header_bg.jpg);
+}
+</style>
+<script type="text/javascript" src="js/bxCarousel.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#demo3').bxCarousel({
+		display_num: 2, 
+		move: 1,
+	});
+});
+</script>
+<style type="text/css">
+.demo{width:250px;top:-5px;margin-bottom:9px;height:120px;OVERFLOW: hidden;position: relative;}
+ .demo .bx_wrap ul img {OVERFLOW:hidden;width:140px;margin:0px;height:120px;}
+.demo .bx_wrap{
+	position: relative; 
+	width:250px; 
+	overflow: hidden;
+}
+.demo .bx_wrap ul li{
+	list-style:none;
+	float:left;
+	width:140px;
+	margin:5px;
+}
+.demo .bx_wrap a.prev {
+	width:20px;
+	height:24px;
+	line-height:24px;
+	outline-style:none;
+	outline-width: 0;
+	position:absolute; 
+	top:60px; 
+	left:2px; 
+	text-indent:-999em; 
+	z-index:10;
+	background:url(./images/arr_left.gif) no-repeat;
+	opacity:0.7;
+}
+.demo .bx_wrap a.next {
+	width:20px;
+	height:24px;
+	line-height:24px; 
+	left:228px;
+	position: absolute;
+	top:60px; 
+	text-indent:-999em; 
+	z-index:10;
+	background:url(./images/arr_right.gif) no-repeat;
+	opacity:0.7;
+}
+.demo .bx_wrap a:hover{
+	opacity:1;
+}
+#box-l .info{
+	height:50px;
+	border-bottom:1px solid #8fa28f;
+}
+#box-l .info-b{
+	height:60px;
+	border-top:1px solid #8fa28f;
+}
+.info .info-head{
+	width:250px;
+	height:40px;
+	float:left;
+}
+.info .info-head img{
+	height:40px;
+	width:40px;
+}
+.info .info-head .info-name{
+	position: relative;
+	font-size:15px;
+}
+#comment-box{
+	min-height:50px;
+}
+</style>
+</head>
+<body>
+<div id="top"> 
+</div>
+<div id="wrap">
+<div id="content">
+<div id="right">
+	<div id="box">
+		<a href="#">
+			<img src="a.jpg"></img>
+		</a>
+		<div class="content">庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉,他的每一个微笑都撼动的毅丝们的心灵.他的每一个微笑都撼动的毅丝们的心灵</div>
+	</div>
+	<div style="padding:10px;font-size:18px;">评论</div>
+	<div id="comment-box">
+		<div class="head"><img src="images/logo.png"/>
+          <div class="name">heyuhang:</div>
+		  <div class="replay"><a href="#">回复</a>(今晚9:00)</div>
+		 </div>
+		 
+        <div class="comment">庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉,庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉 英俊潇洒的健康硬派东北大汉,庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉英俊潇洒的健康硬派东北大汉,庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉 
+        </div>
+	</div>
+	<div id="comment-box">
+		<div class="head"><img src="images/logo.png"/>
+          <div class="name">heyuhang:</div>
+		  <div class="replay"><a href="#">回复</a>(今晚9:00)</div>
+		 </div>
+		 
+        <div class="comment">庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉,庞龙是一个阳光帅气，英俊潇洒的健康硬派东北大汉</div>
+	</div>
+</div>
+<div id="left">
+<div id="box-l">
+	<div class="info">
+		  <div class="info-head"><img src="images/logo.png"/><span class="info-name">heyuhang:</span></div>
+        
+	</div>
+	<div class="photo-list">
+		  <div class="demo"> 
+            <div class="bx_wrap"> 
+              <div class="bx_container"> 
+                <ul id="demo3">
+                  <li><img src="a.jpg"></img></li>
+                  <li><img src="b.jpg"></img></li>
+                  <li><img src="c.jpg"></img></li>
+                  <li><img src="d.jpg"></img></li>
+                </ul>
+              </div>
+            </div>
+          </div> 	
+	</div>
+	<div class="info-b"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="bottom">
+	<div id="box-b">
+		<address>Copyright  2013 heyuhang, All rights reserved</address>
+	</div>
+</div>
+</body>
+</html>

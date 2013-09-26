@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>new</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function(){	
+	//meanu	
+	$('#navigation li').mousemove(function(){
+		$(this).find('.subnav').slideDown();;
+		$(this).find('a').addClass("active");
+	});
+	$('#navigation li').mouseleave(function(){			
+		$(this).find('.subnav').stop(true,true).slideUp("fast");
+		$(this).find('a').removeClass("active");		
+		
+	});
+});
+</script>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	width:1366px;
+	font: 13px/1.5 'ProvaRegular','Liberation Sans',sans-serif;
+	background-color:#e3e5d4;
+}
+*{
+    border: 0;
+    outline: 0;
+    padding:0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+	font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
+	vertical-align: baseline;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+html{
+	direction: ltr;
+}
+#nav{
+	height:250px;
+	background:url(./images/nav_bg.gif) bottom repeat-x;
+	position:relative;
+}
+#logo{
+	left:200px;
+	position:absolute;
+	width:470px;
+	height:200px;
+	background:url(./images/logo.gif) bottom repeat-x;	
+}
+#nav_menu{
+	height:47px;
+	position:relative;
+	color:#BBB;		
+}
+ul li{
+	list-style:none;
+	float:left;
+}
+a{
+	text-decoration: none;
+}
+#nav_menu ul{
+	background:url(./images/nav_ul.gif);
+	height:38px;
+	position:absolute;
+	right:100px;
+}
+#nav_menu ul li{
+	padding:10px 18px 10px 20px;
+	font-size:17px;
+}
+#nav .menu{
+	width:900px;
+	margin:0 auto;
+	height:50px;
+	position:relative;
+	top:145px;
+	color:#BBB;
+	font-size:18px;
+	z-index:10;
+}
+.menu ul li{
+	width:141px;
+	height:38px;
+	position:relative;
+	text-align:center;
+}
+.menu ul li a{
+	color:#BBB;
+}
+.menu ul li:hover a{
+	padding:4px 20px 13px 20px;
+	padding:4px 20px 15px 20px!important;
+	background:#f2f1d7;
+	color:#424242;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#nav .menu ul li.o_li{
+	background:url(./images/o_li.gif) bottom;	
+}
+#nav .menu ul li.m_last{
+	background:url(./images/last_li.gif) bottom;	
+}
+#content{
+	margin:0 auto;
+	width:890px;
+}
+.bb{
+	height:20px;
+}
+#box-l{
+	height:293px;
+	width:600px;
+	border:1px solid #fff;
+	margin-bottom:25px;
+	color: rgb(57, 62, 66);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	background-color: rgb(246, 248, 248);
+/*	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);*/	
+}
+#box-l:hover{
+	background-color: rgb(246, 248, 248);
+	
+	z-index: 10 !important;
+	transform: translate3d(0px, 0px, 0px) rotate(0deg) !important;
+	-webkit-transform:translate3d(0px, 0px, 0px) rotate(0deg) !important; 
+}
+.left{
+	width:600px;
+	float:left;
+}
+.clear{
+	clear:both;
+}
+.right{
+	width:270px;
+	float:right;
+}
+#box-r-t{
+	height:272px;
+	width:243px;
+	background-color:#fff;	
+}
+.box-r{
+	height:270px;
+	width:238px;
+	background-color:#F6F8F8;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);	
+}
+.bc{
+	position:relative;
+	height:40px;
+	top:0px;
+	background:#424242;
+	margin:10px 0px 20px 10px;
+}
+.subnav{
+	width:150px;
+}
+.subnav{
+	z-index: 10;
+	clear:both;
+	display:none;
+	position:absolute;
+	top:39px;
+	left:15px;
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background-color:#f2f1d7;
+	border-left:1px solid  #000;
+	border-right:1px solid  #000;
+	border-bottom:1px solid  #000;
+	box-shadow: 2px 2px 0 0 #000;		
+}
+#nav .menu .subnav ul li a{
+	background:none;
+	font-size:18px;
+	border:none;
+	height:40px;
+	color:#393939;
+	margin:10px 20px 13px 5px;
+}
+#nav .menu .subnav ul li:hover a{
+	color:#000;
+	border:none;
+	color:#52728b;
+}
+.comments .comment{
+    position: relative;
+    padding-bottom: 2px;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid rgb(229, 229, 229);
+	font: 12px/20px arial,helvetica,verdana,tahoma,sans-serif;
+}
+.comment .head{
+	float: left;
+	margin-right: 10px;
+	width: 50px;
+}
+.comment .head img{
+	width: 50px;
+	height: 50px;
+}
+.comments .comment .bar {
+    color: rgb(144, 144, 144);
+    height: 18px;
+    position: relative;
+}
+.comments .comment .con {
+    padding-top: 5px;
+    overflow: hidden;
+}
+.comment .text {
+    margin-bottom: 10px;
+}
+.comment .handle {
+    width: 50px;
+    float: right;
+}
+.comment .reply {
+    float: right;
+    margin-left: 15px;
+    vertical-align: top;
+}
+.comment .timestamp{
+    margin-left: 0px;
+    white-space: nowrap;
+}
+#like{
+	position:absolute;
+	left:300px;
+	top:300px;
+	z-index:10000;
+}
+</style>
+</head>
+<body>
+
+<div id="wrap">
+  <div id="nav"> 
+    <div id="logo"> </div>
+    <div id="nav_menu"> 
+      <ul>
+        <li>登录</li>
+        <li>注册</li>
+      </ul>
+    </div>
+    <div class="menu"> 
+      <ul id="navigation">
+        <li class="o_li"><a href="#">我的博客</a></li>
+        <li class="o_li"><a href="#">我的博客</a></li>
+        <li class="o_li"><a href="#">分门别类</a> 
+          <div class="subnav"> 
+            <ul>
+              <li><a href="search?label=qs&type=l">糗事儿</a></li>
+              <li><a href="search?label=ls&type=l">乐事儿</a></li>
+              <li><a href="search?label=xxs&type=l">学习事</a></li>
+              <li><a href="search?label=cfs&type=l">吃饭事</a></li>
+              <li><a href="search?label=yls&type=l">娱乐事</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="o_li"><a href="#">我的博客</a></li>
+        <li class="m_last"><a href="#">我的博客</a></li>
+      </ul>
+    </div>
+  </div>
+<div id="content">
+<div class="bb">
+</div>
+<div class="left">
+	<div id="box-l">
+	    <div class="bc"> </div>
+		<div class="comments">
+
+		</div>
+	</div>
+	<div id="box-l">
+	    <div class="bc"> </div>
+	</div>
+	<div id="box-l">
+	    <div class="bc"> </div>
+	</div>
+</div>
+<div class="right">
+	<div class="box-r">
+	</div>
+</div>
+</div>
+<div id="bottom">
+
+</div>
+</div>
+</body>
+</html>

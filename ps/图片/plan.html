@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>我的计划</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+	font-family: Tahoma, sans-serif;
+}
+#wrap{
+	background:url(./images/plan.jpg) no-repeat ;
+	width:750;
+	margin:0 auto;
+	height:860px;
+}
+#entry{
+	height:65px;
+	background:url(./images/enter.gif) repeat;
+	position: absolute;
+	cursor: pointer;
+	top: 150px;
+	margin-left:220px;
+	width:255px;	
+}
+#entry:hover{
+	background-position: 260px 0px;
+}
+.planForm{
+	position: absolute;
+	top:300px;
+	margin-left:320px;
+		
+}
+input, select{
+	margin-top:40px;
+	height:30px;
+	background-color : transparent; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #f5cc1b;
+	font-size: 18px;
+	line-height: 18px;
+	color: #821b0a;
+	-webkit-appearance: none;
+}
+.start input[type='submit']{
+	border:none;
+	height:57px;
+	background:url(./images/start.png) 0px 0px;
+	position: absolute;
+	cursor: pointer;
+	top: 260px;
+	margin-left:130px;
+	width:190px;
+}
+.start input[type='submit']:hover{
+	background-position: 190px 0px;
+}
+select:hover,input:hover {
+border:1px solid #821b0a; //鼠标移上的效果
+}
+</style>
+</head>
+<body >
+<div id="wrap">
+	<form class="planForm" action="list.html">
+		<input type="text" size="20"></input></br>
+		<select class="times">
+			<option>一个礼拜</option>
+			<option>两个礼拜</option>
+			<option>三个礼拜</option>
+			<option>四个礼拜</option>
+			<option>五个礼拜</option>
+			<option>六个礼拜</option>
+			<option>七个礼拜</option>
+		</select></br>
+		<select class="time">
+			<option>一天</option>
+			<option>两天</option>
+			<option>三天</option>
+			<option>四天</option>
+			<option>五天</option>
+			<option>六天</option>
+			<option>七天</option>
+		</select></br>
+		<input type="text" size="20"></input></br>
+		<div class="start">
+      <input type="submit" value=""/>
+    </div>
+	</form>
+</div>
+</body>
+</html>

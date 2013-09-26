@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>new</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function(){	
+	//meanu	
+	$('#navigation li').mousemove(function(){
+		$(this).find('.subnav').slideDown();;
+		$(this).find('a').addClass("active");
+	});
+	$('#navigation li').mouseleave(function(){			
+		$(this).find('.subnav').stop(true,true).slideUp("fast");
+		$(this).find('a').removeClass("active");		
+		
+	});
+});
+</script>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	font: 13px/1.5 'ProvaRegular','Liberation Sans',sans-serif;
+	background-color:#e3e5d4;
+}
+*{
+    border: 0;
+    outline: 0;
+    padding:0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+	font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
+	vertical-align: baseline;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+html{
+	direction: ltr;
+}
+#content{
+	margin:50px auto;
+	width:850px;
+}
+.bb{
+	height:20px;
+}
+
+.bc{
+	position:relative;
+	height:40px;
+	top:0px;
+	background:#424242;
+	margin:10px 0px 20px 10px;
+}
+
+.homeleft{
+	width:200px;
+	float:left;
+	height:200px;
+}
+.homeright{
+	width:630px;
+	float:right;
+	height:600px;
+}
+.homebox-l{
+	height:270px;
+	width:200px;
+}
+.homebox-r{
+	height:270px;
+	width:630px;
+	background-color:#F6F8F8;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);	
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0.9;
+    height: 47px;
+    background:url(images/home-nav.gif) repeat-x;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+.home_logo{
+	width:157px;
+	height:38px;
+	position:relative;
+	top:5px;
+	left:20%;
+    background:url(images/home_logo.gif) repeat-x;
+}
+.head{
+	text-align:center;
+}
+.head img{
+	width:200px;
+	height:auto;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div class="header"><div class="home_logo"></div></div>
+<div id="content">
+<div class="bb">
+</div>
+<div class="homeleft">
+	<div class="homebox-l">
+		<div class="head"><img src="./images/default.jpg"/></div>
+	</div>
+</div>
+<div class="homeright">
+	<div class="homebox-r">
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="bottom">
+
+</div>
+</div>
+</body>
+</html>
